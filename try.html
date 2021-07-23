@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function otherHelp()
+    {
+        var y=document.createElement("INPUT");
+        y.setAttribute("type","text");
+        y.setAttribute("value","Enter here");
+        document.getELementById("addHelp").appendChild(y);
+    }
+    </script>
+    
+</head>
+<body>
+    <p>How can you help?</p>
+    <input type="radio" id="emotional">
+    <label for="emotional">Emotional Help</label><br>
+    <input type="radio" id="financial">
+    <label for="financial">Finance Management</label><br>
+    <input type="radio" id="medical">
+    <label for="medical">Medical Help</label><br>
+    <input type="radio" class="other" onclick="otherHelp()">
+    <label for="other">Other</label><br>
+    <p id="addHelp"></p>
+</body>
+</html>
