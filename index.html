@@ -6,38 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        document.getElementById("submitted").onclick=function() {
+        document.getElementById("submit").onclick=function() {
         var num=document.getElementsByName("role");
-        for(var i=0;i<num.length;i++)
+        if(num.checked.value=="volunteer")
         {
-            if(num[i].checked)
-            {
-                if(num[i].value == "volunteer")
-                {
-                window.open("volunteer.html");
-                }
-                else{
-                    window.open("client.html");
-                }
-
-            }
+            window.open("volunteer.html");
         }
+        else{
+            window.open("client.html")
+        }
+        
     }
     </script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Holding Hands</h1>
-    <p>-----A safe place for everyone-----</p>
-    <h2>Now, let us help you get started</h2>
-    <p>Choose your role : </p>
-    <form>
-    <input type="radio" id="volunteer" name="role" value="volunteer">
-    <label for="volunteer">Volunteer</label><br>
-    <input type="radio" id="client" name="role" value="client">
-    <label for="client">Client</label><br>
-    <input type="submit" id="submitted" onclick="open()">
-    
-    </form>
+    <p class="subhead">-----A safe place for everyone-----</p>
+
+    <div class="content">
+
+         <h2 class="subhead">Now, let us help you get started</h2>
+        
+         <h3 class="subhead">Choose your role : </h3>
+         
+         <button onclick="document.location='volunteer.html'" class="buttons">Volunteer</button><br><br>
+         <button onclick="document.location='client.html'" class="buttons">Client</button>
+         
+        
+    </div>
+    <img class="watermark" src="hands.png"/>
 
 </body>
 </html>

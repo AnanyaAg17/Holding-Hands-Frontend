@@ -1,0 +1,42 @@
+body{
+    background-color: cadetblue;
+}
+h1{
+    text-align:center;
+}
+.watermark
+{
+ display:block;
+ margin:auto;
+ margin-top:25%;
+ opacity:0.2;
+ z-index:99;
+ color:white;
+}
+.subhead{
+    text-align:center;
+}
+
+.content{
+    margin-left: 25%;
+    width:50%;
+    padding:15px;
+    border-radius: 10px;
+    height:auto;
+    border:1px solid rgb(75, 118, 119);
+    background-color: rgb(113, 205, 221);
+}
+
+.buttons{
+    background-color: rgb(156, 209, 202);
+    width:100px;
+    padding:10px;
+    border-radius: 10px;
+    margin-left:42%;
+
+}
+
+#contain{
+    width:fit-content;
+    text-align:center;
+}
