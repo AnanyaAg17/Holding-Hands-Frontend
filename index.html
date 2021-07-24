@@ -5,19 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        document.getElementById("submit").onclick=function() {
-        var num=document.getElementsByName("role");
-        if(num.checked.value=="volunteer")
-        {
-            window.open("volunteer.html");
-        }
-        else{
-            window.open("client.html")
-        }
-        
-    }
-    </script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -27,18 +14,18 @@
        <p class="subheading">-----A safe place for everyone-----</p>
     </div>
 
-    <div class="content">
+    <div class="contentFront">
+        <h3>Hey. If you want a safe space, where you can discuss your problems and get solutions simultaneously, you have reached the correct place.</h3>
+        <h2><u>About Us</u></h2>
 
-         <h2 class="subhead">Now, let us help you get started</h2>
-        
-         <h3 class="subhead">Choose your role : </h3>
-         
-         <button onclick="document.location='volunteer.html'" class="buttons">Volunteer</button><br><br>
-         <button onclick="document.location='client.html'" class="buttons">Client</button>
-         
-        
+        <h3>What do we do?</h3>
+        <p>In this community, we have both volunteers and clients. The volunteers fill in the fields in which they can help, and according to that, we match the clients with a list of experts,according to their needs and circumstances, from which they can choose the one that they like the best!</p>
+
+        <h3>What can the clients expect from us?</h3>
+        <p>You can be sure that your problem will be solved as soon as possible and you will never feel unsafe with us. You can consider us to be your extended family.</p>
+
+        <h3>What do you need to do now?</h3>
+        <p>You need to now get started by filling out the form by clicking the <b>button</b> given below. </p>
+
+        <button onclick="document.location='register.html'" class="buttons">Register</button>
     </div>
-    
-
-</body>
-</html>
