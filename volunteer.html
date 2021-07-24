@@ -30,18 +30,36 @@
     <div class="content">
     
     <h3 class="subhead">Let us now go through some of the specifications : </h3>
-    <form>
-        <p>How old are you?</p>
-        <input type="radio" id="below18" name="age">
-        <label for="below18">Below 18</label><br>
-        <input type="radio" id="18-40" name="age">
-        <label for="18-40">between 18 and 40 </label><br>
-        <input type="radio" id="above40" name="age">
-        <label for="above 40">Above 40</label><br>
+    <form><ul><br>
+        <li style="float:right;margin-right:13%">
+            
+            <p>How can you help?</p>
+            <input type="radio" id="emotional">
+            <label for="emotional">Emotional Help</label><br>
+            <input type="radio" id="financial">
+            <label for="financial">Finance Management</label><br>
+            <input type="radio" id="medical">
+            <label for="medical">Medical Help</label><br>
+            <input type="radio" class="other" onclick="otherHelp()">
+            <label for="other">Other</label><br>
+            <p id="addHelp"></p>
+    </li>
 
+        <li style="margin-left:10%">
+            <p>How old are you?</p>
+            <input type="radio" id="below18" name="age">
+            <label for="below18">Below 18</label><br>
+            <input type="radio" id="18-40" name="age">
+            <label for="18-40">between 18 and 40 </label><br>
+            <input type="radio" id="above40" name="age">
+             <label for="above 40">Above 40</label><br>
+        </li>   
         <br>
-
+      
+<li style="margin-left:30%">
         <p>What is your profession?</p>
+
+        <p style="float:right;margin-right:49%;margin-top:-3px;">
         <input type="radio" id="student" name="prof">
         <label for="student">Student</label><br>
         <input type="radio" id="teacher" name="prof">
@@ -51,7 +69,9 @@
         <input type="radio" id="business-person" name="prof">
         <label for="business-person">Business Person</label><br>
         <input type="radio" id="medical" name="prof">
-        <label for="medical">Medicine</label><br>
+        <label for="medical">Medicine</label><br></p>
+
+        <p style="margin-left:-40px">
         <input type="radio" id="law" name="prof">
         <label for="law">Law</label><br>
         <input type="radio" id="CEO" name="prof">
@@ -62,23 +82,12 @@
         <label for="retired">Below 18</label><br>
         <input type="radio" class="other" name="prof" onclick="other()">
         <label for="other">Other</label><br>
-        <p id="add"></p>
+        <p id="add"></p> </p>
+</li>
+</ul>
 
         <br>
-        <p>How can you help?</p>
-        <input type="radio" id="emotional">
-        <label for="emotional">Emotional Help</label><br>
-        <input type="radio" id="financial">
-        <label for="financial">Finance Management</label><br>
-        <input type="radio" id="medical">
-        <label for="medical">Medical Help</label><br>
-        <input type="radio" class="other" onclick="otherHelp()">
-        <label for="other">Other</label><br>
-        <p id="addHelp"></p>
-
-
-        <br>
-        <input type="submit">
+        <input type="submit" class="submit">
 
     </form>
     </div>

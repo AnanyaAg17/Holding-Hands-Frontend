@@ -40,3 +40,11 @@ h1{
     width:fit-content;
     text-align:center;
 }
+
+.submit{
+    margin-left:38%;
+    width:15%;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(185, 212, 212) ;
+}
