@@ -21,6 +21,10 @@ h1 {
   text-align: center;
 }
 
+.info{
+    margin-left:30%;
+}
+
 .content {
   margin-top: 30px;
   margin-left: 33%;
@@ -51,6 +55,18 @@ h1 {
   border: 1px solid rgb(75, 118, 119);
   background-color: rgb(113, 205, 221);
 }
+.contentInfo{
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 25%;
+        width: 50%;
+        padding: 15px;
+        border-radius: 30px;
+        height: auto;
+        border: 1px solid rgb(75, 118, 119);
+        background-color: rgb(113, 205, 221);
+      }
+
 .contentKid {
   margin-top: 30px;
   margin-left: 25%;
@@ -81,12 +97,31 @@ h1 {
   border: 1px solid rgb(75, 118, 119);
   background-color: rgb(113, 205, 221);
 }
+.contentInfoPage {
+    margin-top: 30px;
+    margin-left: 29%;
+    width: 40%;
+    padding: 15px;
+    border-radius: 30px;
+    height: auto;
+    border: 1px solid rgb(75, 118, 119);
+    background-color: rgb(113, 205, 221);
+  }
 .buttons {
   background-color: rgb(156, 209, 202);
   width: 100px;
   padding: 10px;
   border-radius: 10px;
   margin-left: 42%;
+}
+.buttonsInfo{
+   
+        background-color: rgb(156, 209, 202);
+        width: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        
+      
 }
 .buttonsClient {
   background-color: rgb(156, 209, 202);

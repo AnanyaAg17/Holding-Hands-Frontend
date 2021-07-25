@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holding-Hands</title>
     <link rel="stylesheet" href="./style.css">
+    <script>
+        function registered(){
+        alert("Registered");
+        document.location = "infoClient.html";
+        
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -71,9 +78,10 @@
 
             </ul>
             <br>
-            <input type="submit" class="submit">
-            <a href="https://holdinghands.netlify.app/volunteers" target="_blank"><p>Check out all Volunteers</p></a>
+            
+           
         </form>
+        <input type="submit" class="submit" onclick="registered()">
     </div>
     
 </body>

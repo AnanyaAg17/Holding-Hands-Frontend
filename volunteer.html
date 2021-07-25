@@ -6,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holding-Hands</title>
     <script>
+
         function other() {
         var x = document.createElement("INPUT");
         x.setAttribute("type", "text");
         x.setAttribute("value", "Enter here");
         document.getElementById("add").appendChild(x);
-}
+        }
 
-    function otherHelp()
-    {
+        function otherHelp()
+       {
         var y=document.createElement("INPUT");
         y.setAttribute("type","text");
         y.setAttribute("value","Enter here");
         document.getElementById("addHelp").appendChild(y);
-    }
+       }
+
+        function registered(){
+        alert("Registered");
+        document.location = "infoVolunteer.html";
+        
+        }
     </script>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -89,9 +96,10 @@
 </ul>
 
         <br>
-        <input type="submit" class="submit">
-        <a href="https://holdinghands.netlify.app/users" target="_blank"><p>Check out all users</p></a>
     </form>
+        <input type="submit" class="submit" onclick="registered()">
+
+    
     </div>
 
 </body>
